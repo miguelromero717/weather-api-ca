@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  api_weather:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: weather-api-ca
+    container_name: api_weather
+    ports:
+      - "8181:8384"
+    networks:
+      - backend
+    restart: on-failure
+
+networks:
+  backend:
