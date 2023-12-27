@@ -19,4 +19,22 @@ API to fetch weather data from [WeatherStack](https://weatherstack.com/)
 
 ## URL Access
 
-The API is available at https://weather-api-ca.herokuapp.com/
+The API Documentation is available at http://159.69.116.26:8181/q/swagger-ui/
+
+## Endpoints
+
+### Current
+
+* `GET` http://159.69.116.26:8181/current
+  * Query Params
+    * **location** = Berlin
+    * **lon** = 10.10
+    * **lat** = 11.11
+
+### Forecast
+
+* `GET` http://159.69.116.26:8181/forecast
+    * Query Params
+        * **location** = Berlin
+        * **lon** = 10.10
+        * **lat** = 11.11
